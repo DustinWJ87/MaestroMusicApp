@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_panel"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/now_playing"
+            style="@style/SidePanelTheme"
+            android:background="@color/category_now_playing"
+            android:text="@string/now_playing" />
+
+        <TextView
+            android:id="@+id/artists"
+            style="@style/SidePanelTheme"
+            android:background="@color/category_artists"
+            android:text="@string/artists" />
+
+        <TextView
+            android:id="@+id/albums"
+            style="@style/SidePanelTheme"
+            android:background="@color/category_albums"
+            android:text="@string/albums" />
+
+        <TextView
+            android:id="@+id/playlists"
+            style="@style/SidePanelTheme"
+            android:background="@color/category_playlists"
+            android:text="@string/play_lists" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/panel_line"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/activity_panel"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

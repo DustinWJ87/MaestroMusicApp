@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Maestro</string>
+    <string name="title_activity_now_playing">NowPlaying</string>
+    <string name="now_playing">NOW PLAYING</string>
+    <string name="artists">ARTISTS</string>
+    <string name="albums">ALBUMS</string>
+    <string name="play_lists">PLAYLISTS</string>
+</resources>

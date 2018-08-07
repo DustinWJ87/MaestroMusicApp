@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C6D8F1</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="category_now_playing">#86AACE</color>
+    <color name="category_artists">#86CECE</color>
+    <color name="category_albums">#CE8686</color>
+    <color name="category_playlists">#B73550</color>
+</resources>
