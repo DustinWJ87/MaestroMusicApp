@@ -1,3 +1,10 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="list_dimen">88dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="image_padding">8dp</dimen>
+    <dimen name="button_dimen">44dp</dimen>
+    <dimen name="corner_radius">100dp</dimen>
+    <dimen name="list_text">16sp</dimen>
+    <dimen name="panel_text">14sp</dimen>
 </resources>

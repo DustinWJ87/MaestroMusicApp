@@ -1,5 +1,8 @@
 package com.example.android.maestro;
 
+import android.graphics.drawable.Drawable;
+import android.widget.Button;
+
 /**
  * {@link Information} represents a piece or information that will be displayed to the user.
  * It can contain an artist, and album, a number of songs or song title
@@ -22,16 +25,41 @@ public class Information {
     private int mImageResourceId;
 
     /**
+     * Resource Id fetching the button to be displayed
+     */
+    private int mPlayButton = NO_BUTTON_PROVIDED;
+
+    /**
+     * Constant value that represents no button was provided for this information line
+     */
+    private static final int NO_BUTTON_PROVIDED = -1;
+
+    /**
      * Create a new information object
      *
      * @param informationA    First piece of information displayed
      * @param informationB    Second piece of information displayed
-     * @param ImageResourceId is the drawable resource ID for the image associated with the information
+     * @param imageResourceId is the drawable resource ID for the image associated with the information
      */
-    public Information(String informationA, String informationB, int ImageResourceId) {
+    public Information(String informationA, String informationB, int imageResourceId) {
         mInformationA = informationA;
         mInformationB = informationB;
-        mImageResourceId = ImageResourceId;
+        mImageResourceId = imageResourceId;
+    }
+
+    /**
+     * Create a new information object
+     *
+     * @param informationA    First piece of information displayed
+     * @param informationB    Second piece of information displayed
+     * @param imageResourceId is the drawable resource ID for the image associated with the information
+     * @param playButton      is the drawable resource ID for the button associated with the information
+     */
+    public Information(String informationA, String informationB, int imageResourceId, int playButton) {
+        mInformationA = informationA;
+        mInformationB = informationB;
+        mImageResourceId = imageResourceId;
+        mPlayButton = playButton;
     }
 
     /**
@@ -59,5 +87,23 @@ public class Information {
      */
     public int getImageResourceId() {
         return mImageResourceId;
+    }
+
+    /**
+     * Returns the button associated with the resource ID
+     *
+     * @return
+     */
+    public int getPlayButton() {
+        return mPlayButton;
+    }
+
+    /**
+     * Returns whether or not there is a button for the line of information
+     *
+     * @return
+     */
+    public boolean hasButton() {
+        return mPlayButton != NO_BUTTON_PROVIDED;
     }
 }

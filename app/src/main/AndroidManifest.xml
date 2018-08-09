@@ -16,35 +16,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Albums">
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="@string/now_playing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NowPlayingActivity">
+        <activity
+            android:name=".ArtistsActivity"
+            android:label="@string/artists">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArtistsActivity">
+        <activity
+            android:name=".AlbumsActivity"
+            android:label="@string/albums">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AlbumsActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".PlaylistsActivity">
+        <activity
+            android:name=".PlaylistsActivity"
+            android:label="@string/play_lists">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

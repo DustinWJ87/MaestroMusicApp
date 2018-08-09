@@ -15,16 +15,16 @@ public class PlaylistsActivity extends MainActivity {
         // Create a list of information
         ArrayList<Information> data = new ArrayList<Information>();
 
-        data.add(new Information("Playlist A", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist B", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist C", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist D", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist E", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist F", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist G", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist H", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist I", "# of Songs", R.drawable.ic_library_music));
-        data.add(new Information("Playlist J", "# of Songs", R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_a), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_b), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_c), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_d), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_e), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_f), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_g), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_h), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_i), getString(R.string.number_of_songs), R.drawable.ic_library_music));
+        data.add(new Information(getString(R.string.playlist_j), getString(R.string.number_of_songs), R.drawable.ic_library_music));
 
         // Create an InformationAdapter, whose data source is a list of Information
         // The adapter knows how to create list items for each item in the list
@@ -33,7 +33,7 @@ public class PlaylistsActivity extends MainActivity {
         // Find the ListView object in the view hierarchy of the Activity
         // There should be a ListView with the view ID called activity panel
         // which is declared in the activity_main.xml layout file
-        ListView listView = (ListView) findViewById(R.id.activity_panel);
+        ListView listView = findViewById(R.id.activity_panel);
 
         // Make the ListView use the InformationAdapter we created above, so that the
         // ListView will display list items for each piece of Information in the list

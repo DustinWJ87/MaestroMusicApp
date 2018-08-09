@@ -3,38 +3,47 @@
     android:id="@+id/list_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:minHeight="88dp"
-    android:orientation="horizontal">
+    android:minHeight="@dimen/list_dimen"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/default_padding">
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="88dp"
-        android:layout_height="88dp" />
+        android:layout_width="@dimen/list_dimen"
+        android:layout_height="@dimen/list_dimen"
+        android:padding="@dimen/image_padding"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:paddingLeft="@dimen/default_padding">
 
         <TextView
             android:id="@+id/informationA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/ListItemTheme"
             android:text="Line 1"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/informationB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Line 2"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white" />
+            style="@style/ListItemTheme"
+            android:text="Line 2" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="@dimen/list_dimen"
+        android:layout_height="@dimen/button_dimen"
+        android:layout_gravity="center"
+        android:background="@drawable/play_button"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="4" />
 
 </LinearLayout>
